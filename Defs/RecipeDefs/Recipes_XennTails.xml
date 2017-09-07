@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RecipeDefs>  
+  <RecipeDef Abstract="True" Name="SurgeryFleshWolvxTail">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+       <recipeUsers>
+         <li>Alien_Wolvx</li>
+       </recipeUsers>
+  </RecipeDef>
+
+ <RecipeDef ParentName="SurgeryFleshWolvxTail">
+      <defName>InstallWolvxTail</defName>
+      <label>install Logann tail</label>
+      <description>Installs tail.</description>
+      <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+      <jobString>Installing tail.</jobString>
+      <workAmount>1200</workAmount>
+      <ingredients>
+         <li>
+            <filter>
+               <categories>
+                  <li>Medicine</li>
+               </categories>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Tail</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <categories>
+            <li>Medicine</li>
+         </categories>
+         <thingDefs>
+            <li>Tail</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+         <li>Tail</li>
+      </appliedOnFixedBodyParts>
+   </RecipeDef>
+
+ <RecipeDef ParentName="SurgeryFleshWolvxTail">
+      <defName>InstallWxClothTail</defName>
+      <label>install Logann cloth tail</label>
+      <description>Installs cloth tail.</description>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <jobString>Installing cloth tail.</jobString>
+      <workAmount>1200</workAmount>
+      <ingredients>
+         <li>
+            <filter>
+               <categories>
+                  <li>Medicine</li>
+               </categories>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Cloth</li>
+               </thingDefs>
+            </filter>
+            <count>3</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <categories>
+            <li>Medicine</li>
+         </categories>
+         <thingDefs>
+            <li>Cloth</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+         <li>Tail</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>WxClothTail</addsHediff>
+   </RecipeDef>
+
+ <RecipeDef ParentName="SurgeryFleshWolvxTail">
+      <defName>InstallWxBionicTail</defName>
+      <label>install Logann bionic tail</label>
+      <description>Installs bionic tail.</description>
+      <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+      <jobString>Installing bionic tail.</jobString>
+      <workAmount>1200</workAmount>
+      <ingredients>
+         <li>
+            <filter>
+               <categories>
+                  <li>Medicine</li>
+               </categories>
+            </filter>
+            <count>1</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>WxBionicTail</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <fixedIngredientFilter>
+         <categories>
+            <li>Medicine</li>
+         </categories>
+         <thingDefs>
+            <li>RBionicTail</li>
+         </thingDefs>
+      </fixedIngredientFilter>
+      <appliedOnFixedBodyParts>
+         <li>Tail</li>
+      </appliedOnFixedBodyParts>
+      <addsHediff>WxBionicTail</addsHediff>
+   </RecipeDef>
+
+</RecipeDefs> 

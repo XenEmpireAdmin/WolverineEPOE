@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>EPOE Logann Race Patch</name>
+	<author>Xen</author>
+    <url></url>
+	<targetVersion>0.17.0000</targetVersion>
+	<description>EPOE patch for the Logann race</description>
+</ModMetaData>
